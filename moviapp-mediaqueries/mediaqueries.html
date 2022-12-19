@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:goldenrod ;
+    }
+    h1{display: none;}
+
+    @media (max-width:575px){
+        #first h1 {display: block;}
+        body{
+            background-color: antiquewhite;
+        }
+    }
+    @media (min-width:576px)and (max-width:767px){
+        #secound h1 {display: block;}
+        body{
+            background-color: sandybrown;
+        }
+    }
+    @media (min-width:768px) and (max-width:991px){
+        #desktop h1 {display: block;}
+        body{
+            background-color: aquamarine;
+        }
+    } @media (min-width:992px) and (max-width:1199px){
+        #largedesktop h1{display: block;}
+        body{
+            background-color: chocolate;
+        }
+    } @media (min-width:1200px) {
+        #xldesktop h1{display: block;}
+        body{
+            background-color: salmon;
+        }
+    }
+        
+    
+</style>
+<body>
+   <h1 id="first">First</h1>
+   <h1 id="secound"></h1>
+   <h1 id="desktop">desktop</h1>
+   <h1 id="largedesktop">largedsktop</h1>
+   <h1 id="xldesktop">XL</h1>
+</body>
+</html>
